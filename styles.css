@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "arcade";
+    src: url(ka1.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+body {
+    background-color: #18191A;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    font-family: arcade;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: arcade;
+}
+
+.caja {
+    background-color: #444749;
+    margin: 15px;
+    padding: 10px;
+    width: 50vh;
+    display: inline-block;
+    color: White;
+    border: dashed white;
+    border-radius: 15px;
+    font-family: 'Protest Strike', sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: justify;
+    text-align: center;
+
+}
+.caja:hover {
+    background-color: #313436;
+    transform: scale(1.05); /* Hacemos que la caja se agrande al 110% en hover */
+    box-shadow: 0 8px 16px rgb(204, 204, 188)
+}
+p
+{
+    font-size: 2vh;
+}
+li
+{
+    font-size: 2vh;
+    color: white;
+    font-family: 'Protest Strike', sans-serif;
+    text-align: left;
+}
+img {
+    width: 100%;
+    /* Establece el ancho al 100% del contenedor padre */
+    height: auto;
+    /* Ajusta automáticamente la altura para mantener la proporción */
+    max-width: 225px;
+    /* Establece un ancho máximo para la imagen */
+    display: block;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.h2c
+{
+    font-size: 2vh;
+    font-family: 'Protest Strike', sans-serif;
+}
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 2.5vh; /* Tamaño de fuente más grande para h1 en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 2vh; /* Tamaño de fuente más grande para h2 en pantallas pequeñas */
+    }
+
+    .contenedor {
+        display: block;
+    }
+
+    .caja {
+        width: 85%;
+    }
+
+    p, li {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2.5vh; /* Tamaño de fuente más grande para h1 en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 2vh; /* Tamaño de fuente más grande para h2 en pantallas pequeñas */
+    }
+
+    .contenedor {
+        display: block;
+    }
+
+    .caja {
+        width: 85%;
+    }
+
+    p, li {
+        font-size: 1.2em;
+    }
+}
